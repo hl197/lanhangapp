@@ -1,6 +1,11 @@
-import { create } from 'zustand';
-import { loginApi, registerApi, LoginParams, RegisterParams } from '../api/auth';
-import { saveToken, removeToken, saveUser, getUser } from '../utils/storage';
+import { create } from "zustand";
+import {
+  loginApi,
+  registerApi,
+  LoginParams,
+  RegisterParams,
+} from "../api/auth";
+import { saveToken, removeToken, saveUser, getUser } from "../utils/storage";
 
 interface UserInfo {
   userId: number;

@@ -1,11 +1,11 @@
-import client from './client';
+import client from "./client";
 
 export interface BorrowRecord {
   id: number;
   borrowDate: string;
   dueDate: string;
   returnDate: string | null;
-  status: 'borrowed' | 'returned' | 'overdue';
+  status: "borrowed" | "returned" | "overdue";
   renewed: boolean;
   book: {
     id: number;
@@ -17,16 +17,15 @@ export interface BorrowRecord {
 }
 
 export const borrowBook = (bookId: number) =>
-  client.post('/borrow', { bookId });
+  client.post("/borrows", { bookId });
 
 export const renewBook = (recordId: number) =>
-  client.post(`/borrow/${recordId}/renew`);
+  client.post(`/borrows/${recordId}/renew`);
 
 export const returnBook = (recordId: number) =>
-  client.post(`/borrow/${recordId}/return`);
+  client.post(`/borrows/${recordId}/return`);
 
-export const getCurrentBorrows = () =>
-  client.get('/borrow/current');
+export const getCurrentBorrows = () => client.get("/borrows/current");
 
 export const getBorrowHistory = (page = 0, size = 20) =>
-  client.get('/borrow/history', { params: { page, size } });
+  client.get("/borrows/history", { params: { page, size } });

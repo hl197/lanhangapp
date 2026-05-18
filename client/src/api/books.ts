@@ -1,4 +1,4 @@
-import client from './client';
+import client from "./client";
 
 export interface Book {
   id: number;
@@ -19,7 +19,6 @@ export const searchBooks = (params: {
   category?: string;
   page?: number;
   size?: number;
-}) => client.get('/books', { params });
+}) => client.get("/books", { params });
 
-export const getBookDetail = (id: number) =>
-  client.get(`/books/${id}`);
+export const getBookDetail = (id: number) => client.get(`/books/${id}`);

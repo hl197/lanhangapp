@@ -1,4 +1,4 @@
-import client from './client';
+import client from "./client";
 
 export interface LoginParams {
   studentId: string;
@@ -13,7 +13,7 @@ export interface RegisterParams {
 }
 
 export const loginApi = (params: LoginParams) =>
-  client.post('/auth/login', params);
+  client.post("/auth/login", params);
 
 export const registerApi = (params: RegisterParams) =>
-  client.post('/auth/register', params);
+  client.post("/auth/register", params);

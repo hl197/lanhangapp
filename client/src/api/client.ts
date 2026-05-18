@@ -1,12 +1,12 @@
-import axios from 'axios';
-import { getToken } from '../utils/storage';
+import axios from "axios";
+import { getToken } from "../utils/storage";
 
-const API_BASE_URL = 'http://10.0.2.2:8080/api'; // Android emulator
+const API_BASE_URL = "http://192.168.43.241:8080/api";
 
 const client = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 10000,
-  headers: { 'Content-Type': 'application/json' },
+  timeout: 15000,
+  headers: { "Content-Type": "application/json" },
 });
 
 client.interceptors.request.use(async (config) => {
@@ -20,9 +20,9 @@ client.interceptors.request.use(async (config) => {
 client.interceptors.response.use(
   (response) => response.data,
   (error) => {
-    const message = error.response?.data?.message || '网络错误';
+    const message = error.response?.data?.message || "网络错误";
     return Promise.reject(new Error(message));
-  }
+  },
 );
 
 export default client;
