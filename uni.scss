@@ -1,0 +1,41 @@
+/* ==================== 航空蓝图 · 设计系统 ==================== */
+
+/* 主色调 */
+$primary-color: #1e3a5f;
+$primary-light: #3d7ab5;
+$primary-bg: #e8f0f8;
+
+/* 语义色 */
+$success-color: #059669;
+$success-light: #d1fae5;
+$warning-color: #d97706;
+$warning-light: #fef3e4;
+$error-color: #dc2626;
+$error-light: #fee2e2;
+
+/* 文字颜色 */
+$text-color: #1a2a3a;
+$text-color-secondary: #6b7b8d;
+$text-color-hint: #9caab8;
+
+/* 背景和边框 */
+$border-color: #e5e7eb;
+$bg-color: #f0f4f8;
+$card-bg: #ffffff;
+
+/* 间距系统 */
+$spacing-xs: 8rpx;
+$spacing-sm: 16rpx;
+$spacing-base: 24rpx;
+$spacing-lg: 32rpx;
+$spacing-xl: 48rpx;
+
+/* 圆角 */
+$radius-sm: 4rpx;
+$radius-base: 10rpx;
+$radius-lg: 14rpx;
+$radius-xl: 24rpx;
+
+/* 阴影 */
+$shadow-card: 0 2rpx 12rpx rgba(26, 51, 80, 0.04);
+$shadow-lg: 0 4rpx 20rpx rgba(26, 51, 80, 0.08);

@@ -1,0 +1,132 @@
+{
+  "pages": [
+    {
+      "path": "pages/user/login",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/user/cardStatus",
+      "style": {
+        "navigationBarTitleText": "借阅证状态"
+      }
+    },
+    {
+      "path": "pages/user/changePassword",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/user/about",
+      "style": {
+        "navigationBarTitleText": "关于APP"
+      }
+    },
+    {
+      "path": "pages/tabbar/home/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabbar/borrow/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabbar/personal/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/book/search",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/book/detail",
+      "style": {
+        "navigationBarTitleText": "图书详情"
+      }
+    },
+    {
+      "path": "pages/book/category",
+      "style": {
+        "navigationBarTitleText": "分类浏览"
+      }
+    },
+    {
+      "path": "pages/book/list",
+      "style": {
+        "navigationBarTitleText": "图书列表"
+      }
+    },
+    {
+      "path": "pages/borrow/list",
+      "style": {
+        "navigationBarTitleText": "我的借阅"
+      }
+    },
+    {
+      "path": "pages/borrow/history",
+      "style": {
+        "navigationBarTitleText": "借阅历史"
+      }
+    },
+    {
+      "path": "pages/reserve/list",
+      "style": {
+        "navigationBarTitleText": "我的预约"
+      }
+    },
+    {
+      "path": "pages/message/list",
+      "style": {
+        "navigationBarTitleText": "消息通知"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "蓝航图书馆",
+    "navigationBarBackgroundColor": "#1E3A5F",
+    "backgroundColor": "#F0F4F8"
+  },
+  "tabBar": {
+    "color": "#9CAAB8",
+    "selectedColor": "#3D7AB5",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/home/index",
+        "text": "首页",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home-active.png"
+      },
+      {
+        "pagePath": "pages/tabbar/borrow/index",
+        "text": "借阅",
+        "iconPath": "static/tab/borrow.png",
+        "selectedIconPath": "static/tab/borrow-active.png"
+      },
+      {
+        "pagePath": "pages/tabbar/personal/index",
+        "text": "我的",
+        "iconPath": "static/tab/personal.png",
+        "selectedIconPath": "static/tab/personal-active.png"
+      }
+    ]
+  }
+}

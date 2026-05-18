@@ -1,0 +1,7 @@
+node_modules/
+unpackage/
+.hbuilderx/
+.DS_Store
+.superpowers/
+*.apk
+.claude/settings.local.json
