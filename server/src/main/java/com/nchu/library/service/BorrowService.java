@@ -95,11 +95,13 @@ public class BorrowService {
         return borrowRecordRepository.save(record);
     }
 
+    @Transactional(readOnly = true)
     public List<BorrowRecord> getCurrentBorrows(Long userId) {
         return borrowRecordRepository.findByUserIdAndStatus(
                 userId, BorrowRecord.BorrowStatus.borrowed);
     }
 
+    @Transactional(readOnly = true)
     public Page<BorrowRecord> getBorrowHistory(Long userId, Pageable pageable) {
         return borrowRecordRepository.findByUserIdOrderByBorrowDateDesc(userId, pageable);
     }
