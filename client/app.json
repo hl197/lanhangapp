@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "client",
+    "name": "蓝航图书馆",
     "slug": "client",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,21 +10,28 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1a3350"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.lfy123.client",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#1a3350"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7ae7dd10-0eff-4419-ad59-1c2a34a64c6b"
+      }
+    },
+    "owner": "lfy123"
   }
 }
