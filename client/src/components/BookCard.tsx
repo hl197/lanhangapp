@@ -13,6 +13,7 @@ interface BookCardProps {
     available: number;
     total: number;
     category?: string;
+    location?: string;
   };
   onPress: (id: number) => void;
   style?: any;

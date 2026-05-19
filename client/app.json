@@ -17,6 +17,7 @@
     },
     "android": {
       "package": "com.lfy123.client",
+      "usesCleartextTraffic": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1a3350"
@@ -24,6 +25,16 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     },
